@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>
+        My Website
+        </title>
+            <style>
+        #qbox{
+            background-color: gray;
+            height: 200px;
+            width: 300px;
+            text-align: center;
+            margin: auto;
+            border: 2px solid black;
+            border-radius: 20px;
+            
+        }
+
+        #btn1,#btn2,#btn3{
+            padding: 8px;
+            border-radius: 8px;
+            border-color: 2px solid white;
+            box-shadow: 2px 2px 5px black;
+            font-weight: bold;
+            margin: 5px;
+        }
+        #btn3{
+            background-color:green ;
+            color: white;
+        }
+        #check{
+            text-align: center;
+            margin: 10px;
+            font-size: 20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <!-- <h1 id="text">Wassaup!</h1>
+        <h1 class="text2">Welcome to Condingal</h1>
+        <h1 class="text2">Welcome Again</h1>
+        <h1 class="text2">Codingal</h1>  -->
+
+        <div id="qbox">
+            <h1 id="question">What is the capital of Bangladesh?</h1>
+        
+            <button id="btn1" onclick="Dhaka()">Dhaka</button>
+            <button id="btn2" onclick="Khulna()">Khulna</button>
+            <button id="btn3" onclick="Submit()">Submit</button>
+        </div>
+
+        <div id="check">
+
+
+
+        </div>
+
+        <div id="abox">
+
+
+        </div>
+
+
+
+
+        <script>
+
+            // var mytext = document.getElementById("text");
+
+            // mytext.textContent = "Updated via JS"
+
+            // var mytext2 = document.getElementsByClassName("text2");
+            // mytext2[0].textContent = "Welcome."
+            // var mytext2 = document.getElementsByClassName("text2");
+            // mytext2[1].textContent = "Welcome to my world!"
+            // var mytext2 = document.getElementsByClassName("text2");
+            // mytext2[2].textContent = "What?"
+            var ans;
+            function Dhaka(){
+                ans = "Dhaka";
+                var check = document.getElementById("check");
+                var h3 = document.createElement("h3");
+                h3.textContent = "Your selected answer is Dhaka"
+                check.appendChild(h3)
+            }
+            function Khulna(){
+                ans = "Khulna";
+                var check = document.getElementById("check");
+                var h3 = document.createElement("h3");
+                h3.textContent = "Your selected answer is Khulna"
+                check.appendChild(h3)
+
+            }
+            function Submit(){
+
+            }
+
+            var ans 
+
+            
+
+
+        </script>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
