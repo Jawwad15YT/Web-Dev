@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            Youtube
+        </title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body>
+
+        <div class="bg-gray-300 text-2xl font-semibold text-center" id="container">
+            <div id="videos">
+                
+            </div>
+
+        </div>
+
+
+
+
+        
+
+
+
+
+        <script>
+
+            var src=["https://youtu.be/JgDNFQ2RaLQ?si=NM8Y1jAXqB4_Axax", "https://www.youtube.com/watch?v=rj5dxoMY-dE&list=PLjp0AEEJ0-fGKG_3skl0e1FQlJfnx-TJz&index=2", "https://www.youtube.com/watch?v=MI9ZpIKgyf0&list=PLjp0AEEJ0-fGKG_3skl0e1FQlJfnx-TJz&index=3"]
+            
+            var names = ["Sapphire", "Old Phone", "Azizam"]
+
+            var videos = document.getElementById("videos")
+
+            const myvideo = src.map(function(link,index){
+                return `<a href=${link}>${names[index]}</a>`
+            })
+
+            videos.innerHTML = myvideo;
+
+        </script>
+
+    </body>
+</html>
